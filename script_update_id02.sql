@@ -1,0 +1,1 @@
+UPDATE `db_oitavas_libertadores`.`inscritos` SET `numero_de_titulos` = '1' WHERE (`id` = '2');

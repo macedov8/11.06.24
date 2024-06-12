@@ -1,0 +1,1 @@
+DELETE FROM `db_oitavas_libertadores`.`inscritos` WHERE (`id` = '3');

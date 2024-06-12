@@ -1,0 +1,1 @@
+INSERT INTO `db_oitavas_libertadores`.`inscritos` (`time`, `pais`, `tecnico`, `mascote`, `cor_predominante`, `numero_de_titulos`) VALUES ('atletico mg', 'brasil', 'gabriel milito', 'galo', 'preto', '0');

@@ -1,0 +1,26 @@
+CREATE SCHEMA `db_oitavas_libertadores` ;
+
+CREATE TABLE `db_oitavas_libertadores`.`new_table` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `time` VARCHAR(255) NULL,
+  `pais` VARCHAR(255) NULL,
+  `tecnico` VARCHAR(255) NULL,
+  `mascote` VARCHAR(255) NULL,
+  `cor_predominante` VARCHAR(255) NULL,
+  `numero_de_titulos` VARCHAR(255) NULL,
+  PRIMARY KEY (`id`));
+
+ALTER TABLE `db_oitavas_libertadores`.`new_table` 
+RENAME TO  `db_oitavas_libertadores`.`inscritos` ;
+
+INSERT INTO `db_oitavas_libertadores`.`inscritos` (`time`, `pais`, `tecnico`, `mascote`, `cor_predominante`, `numero_de_titulos`) VALUES ('palmeiras', 'brasil', 'abel ferreira', 'porco', 'verde', '3');
+INSERT INTO `db_oitavas_libertadores`.`inscritos` (`time`, `pais`, `tecnico`, `mascote`, `cor_predominante`, `numero_de_titulos`) VALUES ('atletico mg', 'brasil', 'gabriel milito', 'galo', 'preto', '0');
+INSERT INTO `db_oitavas_libertadores`.`inscritos` (`time`, `pais`, `tecnico`, `mascote`, `cor_predominante`, `numero_de_titulos`) VALUES ('flamengo', 'brasil', 'tite', 'urubu', 'vermelho', '3');
+
+UPDATE `db_oitavas_libertadores`.`inscritos` SET `numero_de_titulos` = '1' WHERE (`id` = '2');
+
+UPDATE `db_oitavas_libertadores`.`inscritos` SET `numero_de_titulos` = '1' WHERE (`id` = '2');
+
+DELETE FROM `db_oitavas_libertadores`.`inscritos` WHERE (`id` = '3');
+
+
